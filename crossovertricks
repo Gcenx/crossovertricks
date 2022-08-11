@@ -1,6 +1,5 @@
 #!/bin/sh
 
-export ARGS="$@"
 export WINE="@@APPDIR@@/CrossOver.app/Contents/SharedSupport/CrossOver/bin/wine"
 export WINE64="@@APPDIR@@/CrossOver.app/Contents/SharedSupport/CrossOver/bin/wine"
 
