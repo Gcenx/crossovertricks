@@ -24,9 +24,9 @@ if [ ! -d "${CX_BOTTLE}" ]; then
 fi
 
 export CX_PATH="/Applications/CrossOver.app/Contents/SharedSupport/CrossOver"
-export WINE=wine
-export WINE64=wine
-export WINESERVER=wineserver
+export WINE="${CX_PATH}/bin/wine"
+export WINE64="${WINE}"
+export WINESERVER="${WINE}server"
 export WINEPREFIX="${CX_BOTTLE}"
 export WINETRICKS_WINE_VERSION=$(sed -n '2p' "${CX_PATH}/share/wine/wine.inf" | tr ' ' '\a' | awk -F'\a' '{print $4}')
 export WINEDEBUG=-all
