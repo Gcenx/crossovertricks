@@ -24,7 +24,6 @@ if [ ! -d "${CX_BOTTLE}" ]; then
 fi
 
 export CX_PATH="/Applications/CrossOver.app/Contents/SharedSupport/CrossOver"
-export PATH="${CX_PATH}/bin:${PATH}"
 export WINE=wine
 export WINE64=wine
 export WINESERVER=wineserver
